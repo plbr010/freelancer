@@ -4,24 +4,48 @@ import { cn } from "@/lib/utils";
 
 interface LogoProps {
   className?: string;
-  imageClassName?: string;
-  showText?: boolean;
+  rocketClassName?: string;
+  textClassName?: string;
+  size?: "sm" | "md" | "lg";
 }
 
-export function Logo({ className, imageClassName, showText = false }: LogoProps) {
+const sizes = {
+  sm: { rocket: "h-7 w-7", text: "text-base" },
+  md: { rocket: "h-9 w-9 sm:h-10 sm:w-10", text: "text-lg sm:text-xl" },
+  lg: { rocket: "h-12 w-12 sm:h-14 sm:w-14", text: "text-2xl sm:text-3xl" },
+};
+
+export function Logo({
+  className,
+  rocketClassName,
+  textClassName,
+  size = "md",
+}: LogoProps) {
+  const s = sizes[size];
+
   return (
-    <Link href="/" className={cn("group flex items-center gap-2.5", className)}>
+    <Link
+      href="/"
+      className={cn("group flex items-center gap-2 transition-opacity hover:opacity-90", className)}
+    >
       <Image
-        src="/logo.png"
-        alt="PageBoost — Sites que geram clientes"
-        width={160}
-        height={48}
-        className={cn("h-9 w-auto object-contain sm:h-10", imageClassName)}
+        src="/rocket.png"
+        alt=""
+        width={56}
+        height={56}
+        className={cn(s.rocket, "w-auto object-contain", rocketClassName)}
         priority
       />
-      {showText && (
-        <span className="sr-only">PageBoost</span>
-      )}
+      <span
+        className={cn(
+          "font-bold italic leading-none tracking-tight",
+          s.text,
+          textClassName
+        )}
+      >
+        <span className="text-foreground">Page</span>
+        <span className="text-[#1DA1F2]">Boost</span>
+      </span>
     </Link>
   );
 }

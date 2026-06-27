@@ -4,7 +4,7 @@ export const siteConfig = {
   description:
     "Criação de landing pages e sites profissionais que convertem visitantes em clientes. Design responsivo, SEO e entrega em até 5 dias.",
   url: "https://pageboost.com.br",
-  ogImage: "/logo.png",
+  ogImage: "/rocket.png",
   whatsapp: "5532998064217",
   whatsappMessage:
     "Olá! Vim pelo site PageBoost e gostaria de solicitar um orçamento para criação de site.",

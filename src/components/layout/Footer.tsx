@@ -25,7 +25,7 @@ export function Footer() {
       <Container className="py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <Logo imageClassName="h-8" />
+            <Logo size="sm" />
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
               {siteConfig.tagline}. Transformamos empresas com sites que convertem.
             </p>
