@@ -67,7 +67,7 @@ export function SobreContent() {
             </span>
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
               Transformamos empresas com{" "}
-              <span className="gradient-text">sites que vendem</span>
+              <span className="gradient-text">sites que geram clientes</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
               Somos uma agência especializada em criar presença digital premium
@@ -89,7 +89,7 @@ export function SobreContent() {
               <h2 className="text-3xl font-bold">Nossa História</h2>
               <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  A Studio Web nasceu da frustração de ver empresas excelentes
+                  A PageBoost nasceu da frustração de ver empresas excelentes
                   perdendo clientes por causa de sites amadores. Percebemos que
                   muitos negócios investem em produto, equipe e estrutura, mas
                   negligenciam o canal digital mais importante: o site.

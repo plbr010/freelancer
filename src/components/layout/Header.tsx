@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { ThemeToggle } from "./ThemeToggle";
+import { Logo } from "@/components/layout/Logo";
 import { Button } from "@/components/ui/Button";
 
 const navLinks = [
@@ -48,14 +48,7 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="group flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg gradient-bg">
-            <span className="text-sm font-bold text-white">S</span>
-          </div>
-          <span className="text-lg font-bold tracking-tight">
-            Studio<span className="gradient-text">Web</span>
-          </span>
-        </Link>
+        <Logo />
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Principal">
           {navLinks.map((link) => (
@@ -74,15 +67,13 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
-          <ThemeToggle />
+        <div className="hidden md:flex">
           <Button href="/contato" size="sm">
             Solicitar orçamento
           </Button>
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
-          <ThemeToggle />
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-muted/50"

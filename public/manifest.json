@@ -1,10 +1,10 @@
 {
-  "name": "Studio Web — Sites que Vendem",
-  "short_name": "Studio Web",
-  "description": "Criação de sites profissionais para empresas",
+  "name": "PageBoost — Sites que geram clientes",
+  "short_name": "PageBoost",
+  "description": "Landing pages e sites profissionais que convertem visitantes em clientes",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#030712",
-  "theme_color": "#6366f1",
+  "theme_color": "#007BFF",
   "lang": "pt-BR"
 }

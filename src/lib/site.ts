@@ -1,20 +1,20 @@
 export const siteConfig = {
-  name: "Studio Web",
-  tagline: "Sites que vendem para empresas que crescem",
+  name: "PageBoost",
+  tagline: "Sites que geram clientes",
   description:
-    "Criação de sites profissionais, landing pages e presença digital premium para empresas que querem converter visitantes em clientes.",
-  url: "https://studioweb.com.br",
-  ogImage: "/og-image.svg",
+    "Criação de landing pages e sites profissionais que convertem visitantes em clientes. Design responsivo, SEO e entrega em até 5 dias.",
+  url: "https://pageboost.com.br",
+  ogImage: "/logo.png",
   whatsapp: "5532998064217",
   whatsappMessage:
-    "Olá! Vim pelo site e gostaria de solicitar um orçamento para criação de site.",
+    "Olá! Vim pelo site PageBoost e gostaria de solicitar um orçamento para criação de site.",
   email: "plbrpc@gmail.com",
   phone: "+55 (32) 99806-4217",
   phoneTel: "5532998064217",
   address: "São Paulo, SP — Brasil",
   social: {
-    instagram: "https://instagram.com/studioweb",
-    linkedin: "https://linkedin.com/company/studioweb",
+    instagram: "https://instagram.com/pageboost",
+    linkedin: "https://linkedin.com/company/pageboost",
   },
   stats: [
     { value: 50, suffix: "+", label: "Projetos Entregues" },

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Globe, Share2, Mail, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
+import { Logo } from "@/components/layout/Logo";
 import { siteConfig } from "@/lib/site";
 
 const footerLinks = {
@@ -24,14 +25,9 @@ export function Footer() {
       <Container className="py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg gradient-bg">
-                <span className="text-sm font-bold text-white">S</span>
-              </div>
-              <span className="text-lg font-bold">StudioWeb</span>
-            </Link>
+            <Logo imageClassName="h-8" />
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-              {siteConfig.tagline}. Transformamos empresas com sites que vendem.
+              {siteConfig.tagline}. Transformamos empresas com sites que convertem.
             </p>
             <div className="mt-6 flex gap-3">
               <a
@@ -120,7 +116,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Studio Web. Todos os direitos reservados.
+            © {new Date().getFullYear()} {siteConfig.name}. Todos os direitos reservados.
           </p>
           <p className="text-sm text-muted-foreground">
             Feito com Next.js · São Paulo, Brasil
