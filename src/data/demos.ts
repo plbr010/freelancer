@@ -74,7 +74,7 @@ export const demoProjects: DemoProject[] = [
       accent: "#F1F5F9",
     },
     previewType: "legal",
-    available: false,
+    available: true,
   },
 ];
 
