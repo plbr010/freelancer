@@ -16,9 +16,16 @@ export const siteConfig = {
     instagram: "https://instagram.com/pageboost",
     linkedin: "https://linkedin.com/company/pageboost",
   },
-  stats: [
-    { value: 50, suffix: "+", label: "Projetos Entregues" },
-    { value: 95, suffix: "%", label: "Clientes Satisfeitos" },
-    { value: 200, suffix: "%", label: "Potencial de Conversão" },
-  ],
 };
+
+export function getWhatsAppUrl(message?: string) {
+  const text = message ?? siteConfig.whatsappMessage;
+  return `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(text)}`;
+}
+
+export const credibilityPoints = [
+  { icon: "Clock", label: "Entrega em até 5 dias" },
+  { icon: "RefreshCw", label: "Até 2 revisões inclusas" },
+  { icon: "MessageCircle", label: "Atendimento direto pelo WhatsApp" },
+  { icon: "Palette", label: "Desenvolvimento personalizado" },
+] as const;

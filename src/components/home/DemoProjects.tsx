@@ -7,18 +7,21 @@ import { demoProjects } from "@/data/demos";
 
 export function DemoProjects() {
   return (
-    <section className="relative overflow-hidden bg-muted/20 py-24">
-      <div className="pointer-events-none absolute inset-0 grid-pattern opacity-40" />
+    <section id="templates" className="relative overflow-hidden py-28">
+      <div className="pointer-events-none absolute inset-0 grid-pattern opacity-30" />
+      <div className="pointer-events-none absolute top-0 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-primary/5 blur-3xl" />
+
       <Container className="relative">
         <SectionHeading
-          eyebrow="Templates"
+          eyebrow="Portfólio"
           title="Templates e Projetos Demonstrativos"
-          description="Exemplos de sites profissionais que podemos desenvolver para clínicas, consultórios, empresas e profissionais liberais."
+          description="Sites profissionais prontos para inspiração. Clique em qualquer projeto e veja como pode ficar o seu."
+          className="mb-16 max-w-4xl"
         />
 
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-2">
           {demoProjects.map((demo, i) => (
-            <DemoPreviewCard key={demo.slug} demo={demo} index={i} />
+            <DemoPreviewCard key={demo.slug} demo={demo} index={i} featured />
           ))}
         </div>
       </Container>

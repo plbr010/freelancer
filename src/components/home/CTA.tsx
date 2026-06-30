@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { getWhatsAppUrl } from "@/lib/site";
 
 interface CTAProps {
   title?: string;
@@ -12,8 +13,8 @@ interface CTAProps {
 }
 
 export function CTA({
-  title = "Pronto para ter um site que vende?",
-  description = "Solicite um orçamento gratuito e descubra como podemos transformar a presença digital da sua empresa.",
+  title = "Pronto para ter um site profissional que gera mais contatos?",
+  description = "Solicite um orçamento sem compromisso e receba uma proposta personalizada.",
   className,
 }: CTAProps) {
   return (
@@ -36,12 +37,13 @@ export function CTA({
               {description}
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button href="/contato" size="lg">
-                Solicitar orçamento gratuito
-                <ArrowRight className="h-4 w-4" />
+              <Button href={getWhatsAppUrl()} external size="lg">
+                <MessageCircle className="h-5 w-5" />
+                Falar no WhatsApp
               </Button>
-              <Button href="/projetos" variant="outline" size="lg">
-                Ver projetos
+              <Button href="/contato" variant="outline" size="lg">
+                Solicitar orçamento
+                <ArrowRight className="h-4 w-4" />
               </Button>
             </div>
           </div>

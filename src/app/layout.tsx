@@ -84,7 +84,7 @@ const jsonLd = {
     addressRegion: "SP",
     addressCountry: "BR",
   },
-  priceRange: "R$5.000 - R$15.000",
+  priceRange: "R$1.250",
   areaServed: "Brasil",
   serviceType: [
     "Criação de Sites",

@@ -41,33 +41,66 @@ export const services: Service[] = [
 export const processSteps: ProcessStep[] = [
   {
     step: 1,
-    title: "Conversa Inicial",
+    title: "Conversamos pelo WhatsApp",
     description:
-      "Entendemos seu negócio, objetivos, público-alvo e referências visuais em uma reunião de 30 minutos.",
+      "Entendemos seu negócio e seus objetivos.",
   },
   {
     step: 2,
-    title: "Planejamento",
+    title: "Planejamento e Design",
     description:
-      "Definimos estrutura, funcionalidades, cronograma e apresentamos a proposta visual do seu site.",
+      "Criamos uma estrutura focada em conversão.",
   },
   {
     step: 3,
     title: "Desenvolvimento",
     description:
-      "Codificamos seu site com as melhores tecnologias, priorizando performance, SEO e experiência do usuário.",
+      "Construímos seu site com design moderno e responsivo.",
   },
   {
     step: 4,
-    title: "Aprovação",
+    title: "Revisão",
     description:
-      "Você revisa cada detalhe em ambiente de testes. Fazemos ajustes até sua total satisfação.",
+      "Você solicita ajustes caso necessário.",
   },
   {
     step: 5,
-    title: "Entrega",
+    title: "Publicação",
     description:
-      "Publicamos seu site, configuramos domínio, analytics e treinamos sua equipe para usar o painel.",
+      "Seu site é colocado no ar.",
+  },
+];
+
+export const whyPageBoost = [
+  {
+    icon: "Palette",
+    title: "Design profissional",
+    description: "Visual moderno e alinhado à identidade do seu negócio.",
+  },
+  {
+    icon: "Smartphone",
+    title: "Site responsivo",
+    description: "Perfeito em celular, tablet e desktop.",
+  },
+  {
+    icon: "MessageCircle",
+    title: "Integração com WhatsApp",
+    description: "Botão direto para o cliente falar com você.",
+  },
+  {
+    icon: "Zap",
+    title: "Entrega rápida",
+    description: "Seu site pronto em até 5 dias úteis.",
+  },
+  {
+    icon: "Search",
+    title: "SEO básico incluído",
+    description: "Estrutura otimizada para aparecer no Google.",
+  },
+  {
+    icon: "Target",
+    title: "Foco em conversão",
+    description: "Cada seção pensada para gerar mais contatos.",
   },
 ];
 
