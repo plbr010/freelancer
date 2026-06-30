@@ -59,7 +59,7 @@ export const demoProjects: DemoProject[] = [
       accent: "#D1FAE5",
     },
     previewType: "physio",
-    available: false,
+    available: true,
   },
   {
     slug: "oliveira-advocacia",
