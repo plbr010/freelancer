@@ -44,7 +44,7 @@ export const demoProjects: DemoProject[] = [
       accent: "#EDE9FE",
     },
     previewType: "psychology",
-    available: false,
+    available: true,
   },
   {
     slug: "fisio-life",
