@@ -1,3 +1,25 @@
+export type DemoPreviewType =
+  | "dental"
+  | "beauty"
+  | "psychology"
+  | "physio"
+  | "legal";
+
+export interface DemoProject {
+  slug: string;
+  name: string;
+  category: string;
+  description: string;
+  objective: string;
+  colors: {
+    primary: string;
+    secondary: string;
+    accent: string;
+  };
+  previewType: DemoPreviewType;
+  available: boolean;
+}
+
 export type MockupLayout =
   | "dental"
   | "beauty"
